@@ -18,7 +18,6 @@ body {
     overflow: hidden;
 }
 span {
-    display: inline-block;
     text-align: center;
     width: 200px;
     padding: 62.5px 0;
@@ -44,6 +43,7 @@ span {
     float: right;
 }
 .line_2 div>span {
+    float: left;
     width: 100px;
     padding: 29px 0;
     margin-left: 13px;
@@ -59,7 +59,9 @@ span {
 }
 .line_3 div:first-child span {
     margin-right: 13px;
+    float: left;
 }
 .line_3 div:last-child span {
     margin-left: 13px;
+    float: left;
 }
