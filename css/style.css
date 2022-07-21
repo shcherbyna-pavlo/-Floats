@@ -4,7 +4,7 @@ body {
     background: #E5E5E5;
 }
 .fon {
-    width: 1100px;
+    max-width: 1100px;
     background: #C4C4C4;
     padding: 50px 0;
     margin: 0 auto;
@@ -12,58 +12,54 @@ body {
 .line_1,
 .line_2,
 .line_3 {
-    width: 1000px;
+    max-width: 1000px;
     background: #E6E6E6;
     margin: 0 50px;
-    overflow: hidden;
-}
-.line_1_1 {
-    float: right;
-}
-.line_2 {
-    margin: 50px;
     overflow: hidden;
 }
 span {
     display: inline-block;
     text-align: center;
+    width: 200px;
+    padding: 62.5px 0;
     font-weight: 700;
     font-size: 64px;
     line-height: 75px;
     color: #FFFFFF;
+    background: #FC8F8F;
 }
-.line_2 span:not([class="line_2_one"]) {
+.line_1 span:first-child {
+    float: left;
+}
+.line_1 span:last-child {
+    float: right;
+}
+.line_2 {
+    margin: 50px;
+}
+.line_2>span {
+    float: left;
+}
+.line_2 div {
+    float: right;
+}
+.line_2 div>span {
     width: 100px;
     padding: 29px 0;
-    background: #FC8F8F;
-    float: right;
-    margin-left: 15px;
+    margin-left: 13px;
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
-    color: #FFFFFF;
 }
-.line_1>span {
-    width: 200px;
-    padding: 62.5px 0;
-    background: #FC8F8F;
+.line_3 div:first-child {
+    float: left;
 }
-.line_2_one {
-    width: 200px;
-    padding: 62.5px 0;
-    background: #FC8F8F;
-}
-.line_3_one,
-.line_3_two {
-    width: 200px;
-    padding: 62.5px 0;
-    background: #FC8F8F;
-    margin-right: 11px;
-}
-.line_3 span:not(.line_3_one,.line_3_two) {
-    width: 200px;
-    padding: 62.5px 0;
-    background: #FC8F8F;
+.line_3 div:last-child {
     float: right;
-    margin-left: 15px;
+}
+.line_3 div:first-child span {
+    margin-right: 13px;
+}
+.line_3 div:last-child span {
+    margin-left: 13px;
 }
